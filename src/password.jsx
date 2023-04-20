@@ -1,2 +1,2 @@
-const password = (password) => { return (password.length>=6)}; 
-module.exports = password;
+const passtest = (passtest) => { return (passtest.length>=6)}; 
+module.exports = passtest;
