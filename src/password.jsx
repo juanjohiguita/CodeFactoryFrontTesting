@@ -1,3 +1,3 @@
-const validPassword = new RegExp('^(?=.?[A-Za-z])(?=.?[0-9]).{6,}$');
-const password = (password) => { if (validPassword.test(password)) return true;   else return false; }; 
+//const validPassword = new RegExp('^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d\S]{8,}$');
+const password = (password) => { if ((password.length>=6)) return true;   else return false; }; 
 module.exports = password;

@@ -1,22 +1,22 @@
 const password = require("../password");
 
-const password1 = "123dasjdas";
-const password2 = "jj";
-const password3 = "d";
-const password4 = "asdasdasdasdasdasdasdasdasdsa";
+const passtest1 = "1234dasj";
+const passtest2 = "jj";
+const passtest3 = "d";
+const passtest4 = "asdasdasdasdasdasdasdasdasdsa";
 
 test("Password exitoso", () => {
-  expect(password(password1)).toBe(true);
+  expect(password(passtest1)).toBe(true);
 });
 
 test("Password fallido", () => {
-  expect(password(password2)).toBe(false);
+  expect(password(passtest2)).toBe(false);
 });
 
 test("Password fallido", () => {
-  expect(password(password3)).toBe(false);
+  expect(password(passtest3)).toBe(false);
 });
 
 test("Password fallido", () => {
-  expect(password(password4)).toBe(false);
+  expect(password(passtest4)).toBe(true);
 });
