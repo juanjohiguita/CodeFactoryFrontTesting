@@ -19,7 +19,7 @@ export default function Authentication({onUpdateState}) {
       <form onSubmit={handleSubmit}>
         <label htmlFor="username">Usuario</label>
         <input
-          type="text"
+          type="email"
           id="username"
           value={username}
           onChange={(event) => setUsername(event.target.value)}
