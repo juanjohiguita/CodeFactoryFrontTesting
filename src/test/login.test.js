@@ -1,4 +1,4 @@
-const login = require("./login");
+const login = require("../login");
 
 const email1 = "test1234@gmail.com";
 const email2 = "asdas";
