@@ -1,7 +1,7 @@
 - name: Install dependencies
-   run: yarn
+   run: npm
 - name: Test and coverage
-   run: yarn jest --coverage
+   run: npx jest --coverage
 
 name: Build
 on:
@@ -19,9 +19,9 @@ jobs:
         with:
           fetch-depth: 0 
       - name: Install dependencies
-        run: yarn
+        run: npm
       - name: Test and coverage
-        run: yarn jest --coverage
+        run: npx jest --coverage
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
         env:
