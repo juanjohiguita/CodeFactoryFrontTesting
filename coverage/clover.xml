@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1681958493446" clover="3.2.0">
-  <project timestamp="1681958493446" name="All files">
+<coverage generated="1681959495976" clover="3.2.0">
+  <project timestamp="1681959495976" name="All files">
     <metrics statements="2" coveredstatements="2" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1" elements="5" coveredelements="5" complexity="0" loc="2" ncloc="2" packages="1" files="1" classes="1"/>
     <file name="login.jsx" path="E:\Repos\CodeFactoryFrontTesting\src\login.jsx">
       <metrics statements="2" coveredstatements="2" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
