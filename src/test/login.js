@@ -1,1 +1,2 @@
-const login = (email) => {   if (/^\w+([.-]?\w+)@\w+([.-]?\w+)(.\w{2,3})+$/.test(email)) return true;   else return false; };  module.exports = login;
+const login = (email) => {if (/^\w+([.-]?\w+)@\w+([.-]?\w+)(.\w{2,3})+$/.test(email)) return true;   else return false; };  
+module.exports = login;
