@@ -1,4 +1,4 @@
-const pass = require("../tentativas/pass");
+const pass = require("../pass");
 
 const passtest1 = "1234dasj";
 const passtest2 = "jj";
