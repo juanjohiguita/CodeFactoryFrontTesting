@@ -1,5 +1,8 @@
-const expresion = /^\w+([.-]?\w+)@\w+([.-]?\w+)(.\w{2,3})+$/
-const login = (email) => {if (expresion.test(email)) return true;   else return false; };  
+export const validEmail = new RegExp(
+    '^[a-zA-Z0-9._:$!%-]+@[a-zA-Z0-9.-]+.[a-zA-Z]$'
+ );
+
+const login = (email) => {if (validEmail.test(email)) return true;   else return false; };  
 module.exports = login;
 
 
