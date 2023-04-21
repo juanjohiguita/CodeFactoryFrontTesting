@@ -1,4 +1,4 @@
-const passtest1 = "password123";
+const passtest1 = "Password123*";
 const passtest2 = "Pass word123";
 const passtest3 = "Pass";
 const passtest4 = "Password";
@@ -6,7 +6,7 @@ const passtest5 = "";
 const passtest6 = null;
 
 const isPassRegex = (password) => {
-  if (/^(?=.?[A-Za-z])(?=.?[0-9]).{6,}$/.test(password)) return true;
+  if (/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/.test(password)) return true;
   return false;
 };
 

@@ -5,10 +5,10 @@ const email4 = "qweqweq@dds.c";
 const email5 = "";
 const email6 = null;
 
-const isEmailRegex = (email) => {
-  if (/^\w+([.-]?\w+)@\w+([.-]?\w+)(.\w{2,3})+$/.test(email)) return true;
+function isEmailRegex(mail) {
+  if (/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(mail)) return true;
   return false;
-};
+}
 
 test("Correo válido", () => {
   expect(isEmailRegex(email1)).toBeTruthy();
