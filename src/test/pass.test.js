@@ -5,8 +5,11 @@ const passtest4 = "Password";
 const passtest5 = "";
 const passtest6 = null;
 
+const passReg = new RegExp(
+  /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/
+);
 const isPassRegex = (password) => {
-  if (/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/.test(password)) return true;
+  if (passReg.test(password)) return true;
   return false;
 };
 
