@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1682039559523" clover="3.2.0">
-  <project timestamp="1682039559524" name="All files">
-    <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0" elements="0" coveredelements="0" complexity="0" loc="0" ncloc="0" packages="0" files="0" classes="0"/>
+<coverage generated="1682040000082" clover="3.2.0">
+  <project timestamp="1682040000082" name="All files">
+    <metrics statements="9" coveredstatements="9" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2" elements="15" coveredelements="15" complexity="0" loc="9" ncloc="9" packages="1" files="2" classes="2"/>
+    <file name="emailReg.jsx" path="C:\Users\jgb_3\OneDrive\Escritorio\CodeFactoryFrontTesting\src\emailReg.jsx">
+      <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+      <line num="2" count="1" type="stmt"/>
+      <line num="4" count="5" type="cond" truecount="2" falsecount="0"/>
+      <line num="5" count="4" type="stmt"/>
+      <line num="9" count="1" type="stmt"/>
+    </file>
+    <file name="pass.jsx" path="C:\Users\jgb_3\OneDrive\Escritorio\CodeFactoryFrontTesting\src\pass.jsx">
+      <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+      <line num="1" count="1" type="stmt"/>
+      <line num="4" count="1" type="stmt"/>
+      <line num="5" count="2" type="cond" truecount="2" falsecount="0"/>
+      <line num="6" count="1" type="stmt"/>
+      <line num="9" count="1" type="stmt"/>
+    </file>
   </project>
 </coverage>
