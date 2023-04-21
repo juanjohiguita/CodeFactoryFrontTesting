@@ -1,2 +1,1 @@
-{"E:\\Repos\\CodeFactoryFrontTesting\\src\\login.jsx": {"path":"E:\\Repos\\CodeFactoryFrontTesting\\src\\login.jsx","statementMap":{"0":{"start":{"line":1,"column":14},"end":{"line":1,"column":55}},"1":{"start":{"line":1,"column":26},"end":{"line":1,"column":54}},"2":{"start":{"line":2,"column":0},"end":{"line":2,"column":23}}},"fnMap":{"0":{"name":"(anonymous_0)","decl":{"start":{"line":1,"column":14},"end":{"line":1,"column":15}},"loc":{"start":{"line":1,"column":25},"end":{"line":1,"column":55}},"line":1}},"branchMap":{},"s":{"0":1,"1":4,"2":1},"f":{"0":4},"b":{},"_coverageSchema":"1a1c01bbd47fc00a2c39e90264f33305004495a9","hash":"bb5c729739bb8b864aa054bf41caaead3a07ede8"}
-}
+{}
