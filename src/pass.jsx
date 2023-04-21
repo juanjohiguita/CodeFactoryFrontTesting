@@ -1,9 +1,7 @@
 const passReg = new RegExp(
-  /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*])(?=.{8,})/
+  /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*])(?=.{8,})/
 );
 const isPassRegex = (password) => {
-  if (passReg.test(password)) return true;
-  return false;
+  return passReg.test(password);
 };
-
 module.exports = isPassRegex;
