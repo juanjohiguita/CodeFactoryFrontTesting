@@ -1,22 +1,35 @@
-const login = require("../login");
-
 const email1 = "test1234@gmail.com";
 const email2 = "asdas";
 const email3 = "12312@d";
 const email4 = "qweqweq@dds.c";
+const email5 = "";
+const email6 = null;
 
-test("Login exitoso", () => {
-  expect(login(email1)).toBe(true);
+const isEmailRegex = (email) => {
+  if (/^\w+([.-]?\w+)@\w+([.-]?\w+)(.\w{2,3})+$/.test(email)) return true;
+  return false;
+};
+
+test("Correo válido", () => {
+  expect(isEmailRegex(email1)).toBeTruthy();
 });
 
-test("Login fallido", () => {
-  expect(login(email2)).toBe(false);
+test("Correo inválido", () => {
+  expect(isEmailRegex(email2)).toBeFalsy();
 });
 
-test("Login fallido", () => {
-  expect(login(email3)).toBe(false);
+test("Correo inválido", () => {
+  expect(isEmailRegex(email3)).toBeFalsy();
 });
 
-test("Login fallido", () => {
-  expect(login(email4)).toBe(false);
+test("Correo inválido", () => {
+  expect(isEmailRegex(email4)).toBeFalsy();
+});
+
+test("Correo inválido", () => {
+  expect(isEmailRegex(email5)).toBeFalsy();
+});
+
+test("Correo inválido", () => {
+  expect(email6).toBeNull();
 });

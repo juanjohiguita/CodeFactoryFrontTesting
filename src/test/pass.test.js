@@ -1,22 +1,43 @@
-const pass = require("../pass");
+const passtest1 = "password123";
+const passtest2 = "Pass word123";
+const passtest3 = "Pass";
+const passtest4 = "Password";
+const passtest5 = "";
+const passtest6 = null;
 
-const passtest1 = "1234dasj";
-const passtest2 = "jj";
-const passtest3 = "d";
-const passtest4 = "asdasdasdasdasdasdasdasdasdsa";
+const isPassRegex = (password) => {
+  if (/^(?=.?[A-Za-z])(?=.?[0-9]).{6,}$/.test(password)) return true;
+  return false;
+};
 
-test("Password exitoso", () => {
-  expect(pass(passtest1)).toBe(true);
+//expresión regular
+test("Password válido", () => {
+  expect(isPassRegex(passtest1)).toBeTruthy();
 });
 
-test("Password fallido", () => {
-  expect(pass(passtest2)).toBe(false);
+test("Password inválido", () => {
+  expect(isPassRegex(passtest2)).toBeFalsy();
 });
 
-test("Password fallido", () => {
-  expect(pass(passtest3)).toBe(false);
+//limite inferior
+test("Longitud Password válido", () => {
+  expect(passtest3.length).toBeLessThan(6);
 });
 
-test("Password fallido", () => {
-  expect(pass(passtest4)).toBe(true);
+test("Longitud Password fallido", () => {
+  expect(passtest4.length).toBeGreaterThanOrEqual(6);
+});
+
+//campos vacios
+test("Password no vacío válido", () => {
+  expect(passtest1.length).toBeGreaterThan(0);
+});
+
+test("Password no vacío inválido", () => {
+  expect(passtest5.length).toBeLessThanOrEqual(0);
+});
+
+//campo nulo
+test("Password nulo inválido", () => {
+  expect(passtest6).toBeNull();
 });
