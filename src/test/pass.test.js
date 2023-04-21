@@ -1,17 +1,11 @@
+const isPassRegex = require("../pass");
+
 const passtest1 = "Password123*";
 const passtest2 = "Pass word123";
 const passtest3 = "Pass";
 const passtest4 = "Password";
 const passtest5 = "";
 const passtest6 = null;
-
-const passReg = new RegExp(
-  /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/
-);
-const isPassRegex = (password) => {
-  if (passReg.test(password)) return true;
-  return false;
-};
 
 //expresión regular
 test("Password válido", () => {
